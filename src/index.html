@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SurveyFrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!--<style>
+body {
+  background-color: rgb(248, 252, 253);
+}
+
+h2 {
+  color: #006633;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.department-heading {
+  border: 5px solid #f0cc03;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+  </a>
+    <a class="navbar-brand" href="index.html">SWE642:Nehanth Chowdary Pavuluri</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar " aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavBar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Survey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#List">List Of Survey's</a>
+        </li>
+       
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>CS Department Survey</h2>
+
+    <div class="department-heading">
+      <form>
+        <div class="form-group">
+          <label for="username">Firstname:</label>
+          <input type="text" id="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Lastname:</label>
+          <input type="text" id="username" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Street Address:</label>
+          <input type="text" id="address" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telephone">Telephone Number:</label>
+          <input type="tel" id="telephone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date of Survey:</label>
+          <input type="date" id="date" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="likes">What did you like most about the campus?</label><br>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="students" class="form-check-input">
+            <label for="students" class="form-check-label">Students</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="location" class="form-check-input">
+            <label for="location" class="form-check-label">Location</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="campus" class="form-check-input">
+            <label for="campus" class="form-check-label">Campus</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="atmosphere" class="form-check-input">
+            <label for="atmosphere" class="form-check-label">Atmosphere</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="dorms" class="form-check-input">
+            <label for="dorms" class="form-check-label">Dorm Rooms</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="sports" class="form-check-input">
+            <label for="sports" class="form-check-label">Sports</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">How did you become interested in the university?</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="friends" name="interest" class="form-check-input">
+            <label for="friends" class="form-check-label">Friends</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="television" name="interest" class="form-check-input">
+            <label for="television" class="form-check-label">Television</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="internet" name="interest" class="form-check-input">
+            <label for="internet" class="form-check-label">Internet</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="other" name="interest" class="form-check-input">
+            <label for="other" class="form-check-label">Other</label>
+          </div>
+        </div>
+
+        
+
+        <div class="form-group">
+          <label for="recommendation">Likelihood of Recommending this School:</label>
+          <select id="recommendation" class="form-control">
+            <option>Very Likely</option>
+            <option>Likely</option>
+            <option>Unlikely</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Cancel</button>
+      </form>
+    </div>
+  </div>
+</body>
+</head>-->
+<body>
+  <app-root></app-root>
+</body>
+</html>

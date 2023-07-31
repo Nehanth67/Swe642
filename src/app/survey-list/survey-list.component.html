@@ -1,0 +1,39 @@
+<h2 class="text text-center">Survey list</h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>sid:</th>
+            <th>Firstname:</th>
+            <th>Lastname:</th>
+            <th>Address:</th>
+            <th>City:</th>
+            <th>State:</th> 
+            <th>zip:</th>  
+            <th>phone:</th>
+            <th>email:</th>
+            <th>date:</th>
+            <th>liking:</th>
+            <th>interest:</th>
+            <th>likelyhood:</th>
+            <th>comments:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let survey of surveys">
+            <td>{{survey.sid}}</td>
+            <td>{{survey.fname}}</td>
+            <td>{{survey.lname}}</td>
+            <td>{{survey.address}}</td>
+            <td>{{survey.city}}</td>
+            <td>{{survey.state}}</td>
+            <td>{{survey.zip}}</td>
+            <td>{{survey.phone}}</td>
+            <td>{{survey.email}}</td>
+            <td>{{survey.date}}</td>
+            <td>{{survey.liking}}</td>
+            <td>{{survey.interest}}</td>
+            <td>{{survey.likelyhood}}</td>
+            <td>{{survey.comments}}</td>
+        </tr>
+    </tbody>
+</table>
